@@ -2,8 +2,13 @@ This is a tiny project that provides a super simple lookup table for bank routin
 
 ## Usage
 
-You need to instruct the gem to parse the database file. This gem ships with a file that will be periodically updated (you can also suppply your own).
+In your Gemfile:
 
+```ruby
+gem 'bank_lookup'
+```
+
+You need to instruct the gem to parse the database file. This gem ships with a file that will be periodically updated (you can also suppply your own).
 In an initializer, make sure you load the DB by parsing the data file:
 
 ```ruby
