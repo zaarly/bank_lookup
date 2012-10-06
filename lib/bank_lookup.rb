@@ -1,7 +1,7 @@
 # See https://www.fededirectory.frb.org/format.cfm
 
 require 'multi_json'
-require 'sinatra'
+require 'sinatra/base'
 require 'active_support/core_ext/string/inflections'
 
 module BankLookup
