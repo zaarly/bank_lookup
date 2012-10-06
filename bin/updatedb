@@ -1,0 +1,1 @@
+curl -o data/db.txt http://www.fededirectory.frb.org/fpddir.txt
