@@ -1,5 +1,7 @@
 This is a tiny project that provides a super simple lookup table for bank routing numbers to bank names.
 
+**Note**: Currently, we simply load the routing numbers and bank names into memory. There are approximately 20,656 banks in the database, so this will likely take up a few megabytes of memory in each process that loads the `BankLookup::DB` into memory.
+
 ## Usage
 
 In your Gemfile:
@@ -27,6 +29,6 @@ end
 Now get some bank names:
 
 ```
-curl https://example.com/lookup/bank_name?number=011000015
-# => {"name":"FEDERAL RESERVE BANK OF BOSTON","pretty_name":"Federal Reserve Bank Of Boston"}
+curl https://example.com/lookup/bank_name?number=121202211
+# => {"name":"CHARLES SCHWAB BANK","pretty_name":"Charles Schwab Bank"}
 ```

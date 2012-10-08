@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -o data/db.txt http://www.fededirectory.frb.org/fpddir.txt
+curl -o data/db.txt http://www.fededirectory.frb.org/FedACHdir.txt

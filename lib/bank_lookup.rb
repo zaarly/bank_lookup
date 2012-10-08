@@ -24,7 +24,7 @@ module BankLookup
 
       File.foreach Config.file do |line|
         number   = line[0..8]
-        custname = line[27..62].strip
+        custname = line[35..70].strip
 
         DB[number] = custname
       end
