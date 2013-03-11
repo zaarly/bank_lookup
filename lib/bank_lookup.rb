@@ -38,6 +38,11 @@ module BankLookup
 
     # GET /bank_name?number=23413421
     get '/bank_name' do
+      if params['number'].nil?
+        halt 400, MultiJson.encode(:error => '"number" param is required')
+      end
+      params['number'].strip!
+
       number = params['number']
       if name = DB[number]
         MultiJson.encode({:name => name, :pretty_name => name.titleize})
