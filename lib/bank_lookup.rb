@@ -32,6 +32,10 @@ module BankLookup
   end
 
   class API < Sinatra::Base
+    before do
+      content_type :json
+    end
+
     # GET /bank_name?number=23413421
     get '/bank_name' do
       number = params['number']
